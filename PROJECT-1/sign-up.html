@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/vendors/bootstrap.css" rel="stylesheet">
+		<!-- style -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  
+ <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+  <a class="navbar-brand" href="http://www.apec-eg.com/" >
+  <img src="img/logo.png" style="width:139px; height:50px;">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link btn btn btn-outline-secondary mr-2" href="index.html" >Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn btn-outline-danger mr-2" href="articles.html" >Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn btn-outline-danger mr-2" href="interviews.html">About</a>
+      </li>       
+     
+    </ul>
+
+
+    	<div class="dropdown">
+		  <button class="btn btn-secondary dropdown-toggle btn btn-outline-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  <span><img src="img/user.png"></span> My Account
+		  </button>
+		  <div class="dropdown-menu "  aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="#"> Profile</a>
+            <a class="dropdown-item" href="#">Log Out</a>
+		  </div>
+
+		</div>
+    	
+   
+  </div>
+</nav>
+    <!-- the body of the bage-->
+    <div class="body-con">
+    	<div class="container">
+        	<div class="con-2">
+          
+          <form id="signUp">
+           <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"> <img src="img/envelope.png" alt="E-mail"></span>
+          </div>
+          <input type="text" class="form-control" id="email" placeholder="E-mail" aria-label="email" aria-describedby="basic-addon1">
+        
+           <div class="container"><div class="row">
+          <div class="col-md-12" style="text-align:center;">
+          <span  style="display: none;" > please fill this </span> <span id="error_email" style="color:#F0F0F0;"> </span>
+        </div>
+        </div>
+          </div>
+        </div>
+          <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon2"><img src="img/lock.png" alt="Password"></span>
+          </div>
+          <input type="password" class="form-control from-control-1" id="password" placeholder="Password" aria-label="password" aria-describedby="basic-addon1">
+          
+
+          <input type="password" class="form-control" id="retype_password" placeholder="Confirm Password" aria-describedby="sizing-addon1">
+      	        
+                  
+                  <div class="container">
+    <div class="row">
+    <div class="col-md-6" style="text-align:center;">
+    <span  style="display: none;"> please fill this </span> <span id="password_error" style="color:#F0F0F0;"> </span>
+    </div>
+    <div class="col-md-6" style="text-align:center;">
+    <span  style="display: none;" > please fill this </span> <span id="retype_password_error" style="color:#F0F0F0;"> </span>
+    </div>
+	</div>
+    </div>
+
+       </div>
+          <button  type="submit" class="btn btn-danger  btn-block marg">Creat Account</button>
+            
+            </form>
+
+        </div>
+    </div>
+    </div>
+    <!-- the footer-->
+        <footer>
+            <div class="container">
+            <div class=" row">
+             <div class="col-md-6">
+            <a href="#"><img src="img/facebook-logo.png"></a>
+            <a href="#"><img src="img/twitter-logo.png"></a>
+            <a href="#"><img src="img/linkedin-logo.png"></a>
+            <a href="#"><img src="img/youtube-logo.png"></a>
+            <a href="#"><img src="img/instagram-logo.png"></a>
+            </div>
+             <div class="col-md-6">
+           		 <p> © 2018 APEC'18 IT Committe .</p>
+            </div>
+           
+            </div>
+        	</div>
+        </footer>
+	<script src="js/vendors/jquery-3.3.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/vendors/bootstrap.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>    </body>
+</html>

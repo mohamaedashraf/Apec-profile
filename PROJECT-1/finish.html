@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Registration</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/vendors/bootstrap.css" rel="stylesheet">
+		<!-- style -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  
+ <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+  <a class="navbar-brand" href="http://www.apec-eg.com/" >
+  <img src="img/logo.png" style="width:139px; height:50px;">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link btn btn btn-outline-secondary mr-2" href="index.html" >Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn btn-outline-danger mr-2" href="articles.html" >Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn btn-outline-danger mr-2" href="interviews.html">About</a>
+      </li>       
+     
+    </ul>
+
+
+    	<div class="dropdown">
+		  <button class="btn btn-secondary dropdown-toggle btn btn-outline-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  <span><img src="img/user.png"></span> My Account
+		  </button>
+		  <div class="dropdown-menu "  aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="#"> Profile</a>
+            <a class="dropdown-item" href="#">Log Out</a>
+		  </div>
+
+		</div>
+    	
+   
+  </div>
+</nav>
+         <div class="body-con2">
+    	<div class="container">
+        	<div class="con-22">
+	<form id="myForm">
+    <!--for name-->
+ 	<label>Name <span class="red-t">*</span></label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+       
+        <span class="input-group-text" id=""><img src="img/glyphicons-4-user.png"></span>
+      </div>
+      <input  placeholder="First" type="text" class="form-control fname" required="required" id="form_fname" style=" border-radius:0 !important;s">
+      
+      <input  placeholder="Last" type="text" class="form-control fname" required="required" id="form_lname">
+      <!-- err msg -->
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6" style="text-align:center;">
+    <span  style="display: none;"> please fill this </span> <span id="error_name" style="color:#F33033;"> </span>
+    </div>
+    <div class="col-md-6" style="text-align:center;">
+    <span  style="display: none;" > please fill this </span> <span id="error_lname" style="color:#F33033;"> </span>
+    </div>
+	</div>
+    </div>
+    </div> 
+  
+<!--for mobile-->
+		<label >Mobile <span class="red-t">*</span></label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"><img src="img/glyphicons-164-iphone.png"></span>
+          </div>
+          <input maxlength="11" type="text" class="form-control" placeholder="01XXXXXXXXX" aria-label="Username" aria-describedby="basic-addon1" required="required" id="form_number"> 
+              <!-- err msg -->
+          <div class="container"><div class="row">
+          <div class="col-md-12" style="text-align:center;">
+          <span  style="display: none;" > please fill this </span> <span id="error_number" style="color:#F33033;"> </span>
+        </div>
+        </div>
+          </div>
+          </div>
+          
+
+<!--for uni-->
+
+<label>University <span class="red-t">*</span></label>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"><img src="img/glyphicons-72-book.png"></label>
+  </div>
+  <select class="custom-select" id="unifill" required>
+    <option selected>Choose...</option>
+    <option value="1">Ain shams</option>
+    <option value="2">Cairo</option>
+    <option value="3">AUC</option>
+    <option value="4">Helwan</option>
+    <option id="u5" value="5">Other</option>
+  </select>
+    <!-- err msg -->
+          <div class="container"><div class="row">
+          <div class="col-md-12" style="text-align:center; color:">
+         <span  style="display: none;" > please fill this </span> <span id="error_unifill" style="color:#F33033;"> </span>
+        </div>
+        </div>
+          </div>
+</div>
+	<!--if other-->
+  <div class="form-group" id="fou" style="display: none">
+    <label for="formGroupExampleInput">Other</label><br>
+    <input type="text" class="form-control" id="form_fou" placeholder="Write your University Here" >
+<span  style="display: none;" > please fill this </span> <span id="error_fou"> </span>
+  </div>
+  
+  
+ <!--faculty-->
+
+<label>Faculty <span class="red-t">*</span></label>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"><img src="img/glyphicons-72-book.png"></label>
+  </div>
+  <select class="custom-select" id="fucfill" required>
+    <option selected>Choose...</option>
+    <option value="1">Engineering</option>
+    <option value="2">Computers and information</option>
+    <option value="3">Commerce</option>
+    <option value="4">Mass Communication</option>
+    <option value="5">Other</option>
+  </select>
+<span  style="display: none;" > please fill this </span> <span id="error_fuckfill"> </span>
+</div>
+     <!--if other-->
+<div style="display: none" id="foe">
+
+<div class="form-group">
+    <label for="formGroupExampleInput">Other</label><br>
+    <input type="text" class="form-control" id="form_fuc" placeholder="Write your Faculty Here"  >
+<span  style="display: none;"> please fill this </span><span id="error_foe"> </span>
+  </div></div>
+  
+  <!--for programe-->
+
+<div  id="progdiv" style="display: none;" >
+<label>Programe <span class="red-t">*</span></label>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"><img src="img/glyphicons-319-more-items.png"></label>
+  </div>
+  <select class="custom-select" id="programe"  >
+    <option selected>Choose...</option>
+    <option value="1">Mainstream</option>
+    <option value="2">Credit Hours</option>
+  </select></div>
+<span  style="display: none;"> please fill this </span><span id="error_programe"> </span>
+</div>
+ <!-- for year-->
+<div class="year">
+<label>Year <span class="red-t">*</span></label>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"><img src="img/glyphicons-120-table.png"></label>
+  </div>
+  <select class="custom-select" id="year" required>
+    <option selected>Choose...</option>
+    <option value="1" style="display: none" id="prep" >preparatory</option>
+    <option value="2">First Year</option>
+    <option value="3">Second Year</option>
+    <option value="4">Third Year</option>
+    <option value="5">Forth Year</option>
+  </select>
+<span  style="display: none;" > please fill this </span> <span id="error_year"> </span>
+</div> </div>
+
+
+<div style="display: none" Id="majordiv">
+<label>Major</label><br>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"><img src="img/glyphicons-115-list.png"></label>
+  </div>
+  <select class="custom-select" id="major" >
+    <option selected>Choose...</option>
+    <option value="1">Electrical</option>
+    <option value="2">Mechanical</option>
+    <option value="3">Civil</option>
+    <option value="4">Archticture</option>
+  </select>
+<span  style="display: none;" > please fill this </span> <span id="error_major"> </span>
+</div></div>
+<div style="display: none" Id="mainminordiv">
+<label>Minor</label><br>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"><img src="img/glyphicons-115-list.png"></label>
+  </div>
+  <select class="custom-select elec" id="elec" style="display: none" >
+    <option selected>Choose...</option>
+    <option value="1">Power</option>
+    <option value="2">Computer</option>
+    <option value="3">Electronics</option>
+  </select>
+    <select class="custom-select" id="arch" style="display: none" >
+    <option selected>Choose...</option>
+    <option value="1">Urban Design</option>
+    <option value="2">Urpan Planing</option>
+  </select>
+   <select class="custom-select" id="mech" style="display: none" >
+    <option selected>Choose...</option>
+    <option value="1">Production</option>
+    <option value="2">Power</option>
+    <option value="3">Vechiles</option>
+    <option value="4">Mechatronics</option>
+  </select>
+     <select class="custom-select" id="civil" style="display: none" >
+    <option selected>Choose...</option>
+    <option value="1">Structural Engineering</option>
+    <option value="2">Public Works</option>
+    <option value="3">Irrigation and Hydraulics</option>
+  </select>
+<span  style="display: none;" > please fill this </span> <span id="error_mainminor"> </span>
+</div></div>
+<div style="display: none" id="minordiv">
+<label>Major</label>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"><img src="img/glyphicons-115-list.png"></label>
+  </div>
+  <select class="custom-select" id="minor" >
+    <option selected>Choose...</option>
+    <option value="1">Computer and software</option>
+    <option value="2">Mechatronics</option>
+    <option value="3">communication</option>
+    <option value="4">Energy</option>
+    <option value="6">Environmental</option>
+    <option value="8">Bulding</option>
+    <option value="9">Landscape</option>
+    <option value="10">Manufacturing</option>
+    <option value="11">Materials</option>
+  </select>
+<span  style="display: none;" > please fill this </span> <span id="error_minor"> </span>
+</div>
+</div>
+
+ <div class="form-group">
+    <label for="exampleFormControlTextarea1">Your skills</label><br>
+ <textarea class="form-control" aria-label="With textarea" ></textarea>
+
+<!--<span  style="display: none;" id="error_email"> please fill this </span>-->
+</div>
+ <div class="form-group">
+   <label for="exampleFormControlTextarea1">Previous Experience</label><br>
+ <textarea class="form-control" aria-label="With textarea" ></textarea>
+<!--<span  style="display: none;" > please fill this </span>-->
+</div>
+ <div class="form-group">
+    <label for="exampleFormControlTextarea1">Tell Us About You</label>
+ <textarea class="form-control" aria-label="With textarea" ></textarea>
+<!--<span  style="display: none;"> please fill this </span>--> 
+</div>
+
+ <div class="form-group">
+    <label for="exampleFormControlFile1">CV :</label>
+    <button type="file" class="btn btn-defult">uplode your CV <img src="img/glyphicons-416-disk-open.png"></button>
+  </div> <br>
+  <button type="submit" class="btn btn-danger btn-block btn-lg">Complete Registration</button>
+
+
+</form>
+	</div>
+     </div>
+
+        </div>
+        <footer>
+            <div class="container">
+            <div class=" row">
+             <div class="col-md-6">
+            <a href="#"><img src="img/facebook-logo.png"></a>
+            <a href="#"><img src="img/twitter-logo.png"></a>
+            <a href="#"><img src="img/linkedin-logo.png"></a>
+            <a href="#"><img src="img/youtube-logo.png"></a>
+            <a href="#"><img src="img/instagram-logo.png"></a>
+            </div>
+             <div class="col-md-6">
+           		 <p> © 2018 APEC'18 IT Committe .</p>
+            </div>
+           
+            </div>
+        	</div>
+        </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>   
+	<script src="js/vendors/jquery-3.3.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/vendors/bootstrap.js"></script>
+
+  </body>
+</html>
+	
